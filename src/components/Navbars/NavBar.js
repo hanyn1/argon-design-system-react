@@ -24,7 +24,7 @@ import {
   UncontrolledTooltip,
 } from "reactstrap";
 
-class DemoNavbar extends React.Component {
+class NavBar extends React.Component {
   componentDidMount() {
     let headroom = new Headroom(document.getElementById("navbar-main"));
     // initialise
@@ -97,12 +97,12 @@ class DemoNavbar extends React.Component {
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="ni ni-collection d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">Se connecter</span>
+                      <span className="nav-link-inner--text">Profile </span>
                     </DropdownToggle>
                     <DropdownMenu>
                      
-                      <DropdownItem to="/login-page" tag={Link}>
-                      Connexion
+                      <DropdownItem to="/profile-page" tag={Link}>
+                      Profile
                       </DropdownItem>
                       
                     </DropdownMenu>
@@ -119,4 +119,4 @@ class DemoNavbar extends React.Component {
   }
 }
 
-export default DemoNavbar;
+export default NavBar;
